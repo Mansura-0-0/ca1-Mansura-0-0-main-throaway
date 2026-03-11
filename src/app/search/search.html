@@ -1,0 +1,16 @@
+<div class="container mt-4">
+  <form (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="title" class="form-label">Enter movie title</label>
+      <input
+        type="text"
+        id="title"
+        name="title"
+        class="form-control"
+        [(ngModel)]="title"
+      >
+    </div>
+
+    <button type="submit" class="btn btn-dark">Search</button>
+  </form>
+</div>

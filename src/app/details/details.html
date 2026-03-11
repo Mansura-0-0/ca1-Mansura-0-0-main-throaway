@@ -1,0 +1,19 @@
+<div class="container mt-4">
+  @if (movieService.movie(); as movie) {
+    <h2>{{ movie.Title }}</h2>
+    <p><strong>Year:</strong> {{ movie.Year }}</p>
+    <p><strong>Rated:</strong> {{ movie.Rated }}</p>
+    <p><strong>Released:</strong> {{ movie.Released }}</p>
+    <p><strong>Runtime:</strong> {{ movie.Runtime }}</p>
+    <p><strong>Genre:</strong> {{ movie.Genre }}</p>
+    <p><strong>Director:</strong> {{ movie.Director }}</p>
+    <p><strong>Writer:</strong> {{ movie.Writer }}</p>
+    <p><strong>Actors:</strong> {{ movie.Actors }}</p>
+    <p><strong>Country:</strong> {{ movie.Country }}</p>
+    <p><strong>Awards:</strong> {{ movie.Awards }}</p>
+    <p><strong>Box Office:</strong> {{ movie.BoxOffice }}</p>
+   
+  } @else {
+    <p>{{ movieService.errorMessage() }}</p>
+  }
+</div>
